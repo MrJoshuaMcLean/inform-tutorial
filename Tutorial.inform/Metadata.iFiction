@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ifindex version="1.0" xmlns="http://babel.ifarchive.org/protocol/iFiction/">
+    <story>
+        <identification>
+            <ifid>1247F968-5006-45EE-A5B3-3BF754ED9CEE</ifid>
+            <format>zcode</format>
+        </identification>
+        <bibliographic>
+            <title>Tutorial</title>
+            <author>Joshua McLean</author>
+            <headline>An Interactive Fiction</headline>
+            <genre>Fiction</genre>
+            <firstpublished>2020</firstpublished>
+            <language>en</language>
+            <group>Inform</group>
+        </bibliographic>
+        <resources>
+            <auxiliary>
+                <leafname>dreams.ogg</leafname>
+                <description>--</description>
+            </auxiliary>
+        </resources>
+        <releases>
+            <attached>
+                <release>
+                    <releasedate>2020-10-26</releasedate>
+                    <version>1</version>
+                    <compiler>Inform 7</compiler>
+                    <compilerversion>6M62</compilerversion>
+                </release>
+            </attached>
+        </releases>
+        <colophon>
+            <generator>Inform 7</generator>
+            <generatorversion>6M62</generatorversion>
+            <originated>2020-10-26</originated>
+        </colophon>
+        <zcode>
+            <serial>201026</serial>
+            <release>1</release>
+            <compiler>Inform 7 build 6M62</compiler>
+        </zcode>
+    </story>
+</ifindex>

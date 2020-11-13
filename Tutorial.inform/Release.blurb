@@ -1,0 +1,57 @@
+! Blurb file created by Inform build 6M62
+
+status "C:\Program Files (x86)\Inform 7\Internal\Miscellany\CblorbModel.html" "M:\gamedev\projects\inform\bardolfs-curse\Tutorial.inform\Build\StatusCblorb.html"
+
+
+! Identification
+
+project folder "M:\gamedev\projects\inform\bardolfs-curse\Tutorial.inform"
+release to "M:\gamedev\projects\inform\bardolfs-curse\Tutorial.materials\Release"
+
+! Blorb instructions
+
+storyfile leafname "Tutorial.zblorb"
+storyfile "M:\gamedev\projects\inform\bardolfs-curse\Tutorial.inform\Build\output.z8" include
+ifiction "M:\gamedev\projects\inform\bardolfs-curse\Tutorial.inform\Metadata.iFiction" include
+cover "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
+picture 1 "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
+release file "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
+release file "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Small Cover.jpg"
+
+! Placeholder variables
+
+placeholder [IFID] = "1247F968-5006-45EE-A5B3-3BF754ED9CEE"
+placeholder [RELEASE] = "1"
+placeholder [YEAR] = "2020"
+placeholder [TITLE] = "Tutorial"
+placeholder [AUTHOR] = "Joshua McLean"
+placeholder [BLURB] = "A work of interactive fiction."
+
+! Other material to release
+
+auxiliary "M:\gamedev\projects\inform\bardolfs-curse\Tutorial.materials\dreams.ogg" "--" "--"
+
+! Website instructions
+
+placeholder [ENCODEDSTORYFILE] = "Tutorial.zblorb.js"
+template path "M:\gamedev\projects\inform\bardolfs-curse\Tutorial.materials\Templates"
+template path "C:\Users\secid\Documents\Inform\Templates"
+template path "C:\Program Files (x86)\Inform 7\Internal\Templates"
+placeholder [INTERPRETERSCRIPTS] = " "
+interpreter "Vorple" "z"
+base64 "M:\gamedev\projects\inform\bardolfs-curse\Tutorial.inform\Build\output.z8" to "M:\gamedev\projects\inform\bardolfs-curse\Tutorial.materials\Release\interpreter\Tutorial.zblorb.js"
+
+! Website instructions
+
+template path "M:\gamedev\projects\inform\bardolfs-curse\Tutorial.materials\Templates"
+template path "C:\Users\secid\Documents\Inform\Templates"
+template path "C:\Program Files (x86)\Inform 7\Internal\Templates"
+css
+website "Standard"
+status instruction ||&nbsp;<a href="source:story.ni#line14"><img border=0 src=inform:/doc_images/Reveal.png></a>||
+status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc403.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the library card'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the introductory booklet'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the introductory postcard'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
