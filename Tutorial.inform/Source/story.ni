@@ -77,7 +77,8 @@ The Bottom of the Tree is north from the parking lot. The description is "A tree
 
 After looking in the bottom of the tree when an old gentleman is nowhere, tutsay "You can also move UP or DOWN by typing those commands, abbreviated U or D. Try going UP now to climb the tree."
 
-A man called an old gentleman is nowhere. The real name is "John". Understand "old man" and "John" as the old gentleman. "[if an old gentleman is introduced]John [otherwise]An old gentleman with tousled gray hair [end if]stands here." The description is "An old gentleman." He carries a thing called a crowbar.
+A man called an old gentleman is nowhere. The real name is "John". Understand "old man" and "John" as the old gentleman. "[if an old gentleman is introduced]John [otherwise]An old gentleman with tousled gray hair [end if]stands here." The description is "An old gentleman."
+The crowbar is carried by the old gentleman. The description is "Every MIT graduate's weapon of choice."
 After looking in the bottom of the tree when an old gentleman is not introduced:
 	tutsay "Look, a person! Try saying hello. You can TALK TO MAN or SAY HELLO TO MAN or even simply HELLO MAN."
 
@@ -154,16 +155,16 @@ Chapter 4 The Office
 The Office is a room. "Your office is tidy and organized, as you like it, with a desk against the east wall. A tall[if the cabinet is open], open[end if] cabinet stands opposite it. The door to the north leads into the main hall, and a window to the south is open to the outside."
 After looking in the office, tutsay "Take a moment to look around the office. Where did you leave that dongle?"
 
-A scenery closed locked container called the cabinet is here.
-The dongle is in the cabinet. Understand "flash drive" and "drive" as the dongle. "A small flash drive contianing the latest build of your most recent prototype."
+A scenery closed locked container called the cabinet is here. The description is "A wooden cabinet. [if the cabinet is closed]It's shut tight.[end if]".
+The dongle is in the cabinet. Understand "flash drive" and "drive" as the dongle. The description is "A small flash drive contianing the latest build of your most recent prototype."
 Before taking the dongle when the dongle is not handled:
 	sayn "You grab the dongle. Your presentation is saved! Now to get back to the car...";
 	increase the score by 2.
 
 A scenery chair called the office chair is here. The description is "A rather heavy chair on wheels with a ncie cushioned seat and back - one of the perks of having your own office."
 A scenery supporter called the office desk is here. The description is "A boring wooden desk with a single [if the office drawer is closed]closed [end if]drawer[if the office drawer is open] which lies open.[otherwise][/p](You can sometimes open an object to see what's inside. Try OPEN DESK.)[end if]".
-An openable closed container called the office drawer is part of the desk. Instead of opening the office desk: try opening the office drawer.
-The office key is in the office drawer. It unlocks the cabinet. The printed name is "office key[if the office key is in the office drawer] (Well, it's no dongle, but maybe this key will help?)[end if]".
+An openable closed container called the office drawer is part of the desk. The description is "A drawer. Nothing special. It's [if the drawer is open]open[otherwise]closed[end if]."Instead of opening the office desk: try opening the office drawer.
+The office key is in the office drawer. It unlocks the cabinet. The printed name is "office key[if the office key is in the office drawer] (Well, it's no dongle, but maybe this key will help?)[end if]". The description is "A small, silver key with a tiny keyring."
 Report taking the office key: tutsay "You now have the key to the cabinet. You can UNLOCK CABINET WITH KEY, then OPEN CABINET. Or you can simply OPEN CABINET and the game will automatically unlock it, since you have the matching key.".
 
 A closed locked door called the office door is north of the office. "A door leading out of your office into the main hallway. No reason to go there - the dongle is here somewhere."
