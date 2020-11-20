@@ -1,5 +1,9 @@
 "Tutorial" by Joshua McLean
 
+Include Locksmith by Emily Short.
+Include Conversation Framework by Eric Eve.
+Include Postures by Emily Short.
+
 [Include Books by Joshua McLean.]
 Include General by Joshua McLean.
 Include Household Items by Joshua McLean.
@@ -11,7 +15,7 @@ Include Time Management by Joshua McLean.
 Include Violence by Joshua McLean.
 Include Vorple Interface by Joshua McLean.
 
-Release along with the "Vorple" interpreter and the file "dreams.ogg".
+Release along with the "Vorple" interpreter.
 
 [
 TODO
@@ -32,8 +36,8 @@ To tutsay (str - text):
 
 Book 2 The Beginning
 
-When play begins:
-	play music file "dreams.ogg", looping.
+[When play begins:
+	play music file "dreams.ogg", looping.]
 
 The maximum score is 3.
 
@@ -79,7 +83,7 @@ After looking in the bottom of the tree when an old gentleman is nowhere, tutsay
 
 A man called an old gentleman is nowhere. The real name is "John". Understand "old man" and "John" as the old gentleman. "[if an old gentleman is introduced]John [otherwise]An old gentleman with tousled gray hair [end if]stands here." The description is "An old gentleman."
 The crowbar is carried by the old gentleman. The description is "Every MIT graduate's weapon of choice."
-After looking in the bottom of the tree when an old gentleman is not introduced:
+After looking in the bottom of the tree when an old gentleman is in the bottom of the tree and an old gentleman is not introduced:
 	tutsay "Look, a person! Try saying hello. You can TALK TO MAN or SAY HELLO TO MAN or even simply HELLO MAN."
 
 After saying hello to an old gentleman:
@@ -162,9 +166,9 @@ Before taking the dongle when the dongle is not handled:
 	increase the score by 2.
 
 A scenery chair called the office chair is here. The description is "A rather heavy chair on wheels with a ncie cushioned seat and back - one of the perks of having your own office."
-A scenery supporter called the office desk is here. The description is "A boring wooden desk with a single [if the office drawer is closed]closed [end if]drawer[if the office drawer is open] which lies open.[otherwise][/p](You can sometimes open an object to see what's inside. Try OPEN DESK.)[end if]".
-An openable closed container called the office drawer is part of the desk. The description is "A drawer. Nothing special. It's [if the drawer is open]open[otherwise]closed[end if]."Instead of opening the office desk: try opening the office drawer.
-The office key is in the office drawer. It unlocks the cabinet. The printed name is "office key[if the office key is in the office drawer] (Well, it's no dongle, but maybe this key will help?)[end if]". The description is "A small, silver key with a tiny keyring."
+A scenery table called the office desk is here. The description is "A boring wooden desk with a single [if the office drawer is closed]closed [end if]drawer[if the office drawer is open] which lies open.[otherwise][/p][i](You can sometimes open an object to see what's inside. Try OPEN DESK.)[/i][end if]".
+An openable closed container called the office drawer is part of the desk. The description is "A drawer. Nothing special. It's [if the drawer is open]open[otherwise]closed[end if]." Instead of opening the office desk: try opening the office drawer.
+The office key is in the office drawer. It unlocks the cabinet. The printed name is "office key[if the office key is in the office drawer] [i](Well, it's no dongle, but maybe this key will help?)[/i][end if]". The description is "A small, silver key with a tiny keyring."
 Report taking the office key: tutsay "You now have the key to the cabinet. You can UNLOCK CABINET WITH KEY, then OPEN CABINET. Or you can simply OPEN CABINET and the game will automatically unlock it, since you have the matching key.".
 
 A closed locked door called the office door is north of the office. "A door leading out of your office into the main hallway. No reason to go there - the dongle is here somewhere."

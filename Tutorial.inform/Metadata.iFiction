@@ -3,7 +3,7 @@
     <story>
         <identification>
             <ifid>1247F968-5006-45EE-A5B3-3BF754ED9CEE</ifid>
-            <format>zcode</format>
+            <format>glulx</format>
         </identification>
         <bibliographic>
             <title>Tutorial</title>
@@ -14,16 +14,10 @@
             <language>en</language>
             <group>Inform</group>
         </bibliographic>
-        <resources>
-            <auxiliary>
-                <leafname>dreams.ogg</leafname>
-                <description>--</description>
-            </auxiliary>
-        </resources>
         <releases>
             <attached>
                 <release>
-                    <releasedate>2020-10-26</releasedate>
+                    <releasedate>2020-11-20</releasedate>
                     <version>1</version>
                     <compiler>Inform 7</compiler>
                     <compilerversion>6M62</compilerversion>
@@ -33,12 +27,12 @@
         <colophon>
             <generator>Inform 7</generator>
             <generatorversion>6M62</generatorversion>
-            <originated>2020-10-26</originated>
+            <originated>2020-11-20</originated>
         </colophon>
-        <zcode>
-            <serial>201026</serial>
+        <glulx>
+            <serial>201120</serial>
             <release>1</release>
             <compiler>Inform 7 build 6M62</compiler>
-        </zcode>
+        </glulx>
     </story>
 </ifindex>

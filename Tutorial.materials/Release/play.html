@@ -7,39 +7,17 @@
   <meta name="author" content="Joshua McLean">
   <link rel="stylesheet" href="style.css">
   
-  <script type="text/javascript" src="interpreter/vorple.parchment.min.js"></script>
-<script type="text/javascript">
-// The loading message can be changed by setting a global variable
-// vorpleLoaderMessage in a custom JavaScript file
-$( function() {
-$( '#vorpleLoader' ).html(
-typeof vorpleLoaderMessage === 'string' ? vorpleLoaderMessage : 'Loading...'
-);
-});
-</script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="interpreter/vorple.css">
+<link rel="stylesheet" type="text/css" href="interpreter/roboto.css">
+<link rel="stylesheet" type="text/css" href="interpreter/jquery.powertip.css">
+<link rel="stylesheet" type="text/css" href="interpreter/toastr.css">
+<link rel="stylesheet" type="text/css" href="interpreter/vex.css">
+<link rel="stylesheet" type="text/css" href="interpreter/vex-theme-plain.css">
 
-<script type="text/javascript">
-parchment.options.lib_path = 'interpreter/';
-parchment.options.default_story = [ "Tutorial.zblorb", "interpreter/Tutorial.zblorb.js" ];
-parchment.options.lock_story = 1;
-
-
-vorple.media.defaults.swfPath = 'interpreter/';
-vorple.media.defaults.audioPath = '.';
-vorple.media.defaults.imagePath = '.';
-vorple.media.defaults.musicPath = '.';
-vorple.media.defaults.videoPath = '.';
-
-$( function() {
-$( '.coverimage, .links, .interpretercredit' ).detach();
-$( '#vorpleContainer' ).unwrap();
-
-vorple.core.init( parchment );
-parchment.init();
-});
-</script>
+<link rel="stylesheet" type="text/css" href="interpreter/haven.css">
+<link rel="stylesheet" type="text/css" href="interpreter/vorple.css">
   
  </head>
 <body class="play">
@@ -53,16 +31,49 @@ parchment.init();
 </div>
 
 <div id="gameport">
-<div id="vorpleContainer">
-<div id="vorple"><div id="vorpleLoader"></div></div>
-<div id="vorpleInput"></div>
-<div id="parchment"></div>
-<div class="clearAll"></div>
-</div>
+<script src="interpreter/vorple.min.js"></script>
+<script src="interpreter/Tutorial.gblorb.js"></script>
+
+<script>
+if( location.protocol === "file:" ) {
+$( 'body' )
+.empty()
+.html( "<div><p>You are currently viewing the page from the filesystem. " +
+"Unfortunately Vorple requires that the page is viewed through " +
+"the HTTP protocol, that is, you'll need to either upload it " +
+"to the Internet or install a local server.</p>" +
+'<p>See <a href="https://vorple-if.com/docs/localhost" style="color:#dde">vorple-if.com/docs/localhost</a> ' +
+"for more information.</p>" +
+"</div>" )
+.find( 'div' )
+.css({
+margin: "2em",
+padding: "1em",
+color: "#fff",
+backgroundColor: "rgb(137, 50, 58)",
+border: "3px solid gray"
+});
+
+throw new Error( "Vorple can't be run from the filesystem" );
+}
+
+$( function() {
+$( '.container, .interpretercredit' ).remove();
+});
+
+vorple.options = {
+autosave: false,
+engineColors: false,
+story: ""
+};
+
+vorple.debug.off();
+vorple.init();
+</script>
 </div>
 
 </div>
-<div class="interpretercredit"><a href="http://vorple-if.com">Vorple</a></div>
+<div class="interpretercredit"><a href="https://vorple-if.com">Vorple</a></div>
 </body>
 </html>
 
